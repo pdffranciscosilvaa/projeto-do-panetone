@@ -1,17 +1,17 @@
 import Ings from './Ings.js'
 export default class Preco{
     preco = {
-        "Farinha de trigo integral": 0.5,
-        "Farinha de trigo branca": 0.5,
-        "Fermento biológico seco": 0.5,
-        "Leite morno": 0.5,
-        "Ovos": 0.5,
-        "Manteiga sem sal": 0.5,
-        "Açúcar mascavo": 0.5,
-        "Mel": 0.5,
-        "Essência de baunilha": 0.5,
-        "Frutas secas": 0.5,
-        "Sal": 0.5
+        "Farinha de trigo integral": 1.08,
+        "Farinha de trigo branca": 0.62,
+        "Fermento biológico seco": 1.25,
+        "Leite morno": 0.27,
+        "Ovos": 2.35,
+        "Manteiga sem sal": 0.79,
+        "Açúcar mascavo": 0.64,
+        "Mel": 0.50,
+        "Essência de baunilha": 1.85,
+        "Frutas secas": 16.94,
+        "Sal": 0.08
     }
     calcularPreco(){
         let valorTotal = 0
