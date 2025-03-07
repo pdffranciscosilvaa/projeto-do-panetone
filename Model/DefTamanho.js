@@ -9,6 +9,33 @@ export default class Tamanho{
         "grande": 700,
         "personalizado": calcTamanhoPers()
     }
+    ingredientes = {
+        "Farinha de trigo integral": 150,
+        "Farinha de trigo branca": 100,
+        "Fermento biológico seco": 5,
+        "Leite morno": 60,
+        "Ovos": 2,
+        "Manteiga sem sal": 40,
+        "Açúcar mascavo": 50,
+        "Mel": 10,
+        "Essência de baunilha": 5,
+        "Frutas secas": 80,
+        "Sal": 2
+    }
+    getProporc(){
+        switch(tamanho){
+            case "pequeno":
+                return proporc = 0.409
+            case "medio":
+                return proporc = 1
+            case "grande":
+                return proporc = 1.59
+            case "personalizado":
+                return proporc = calcTamanhoPers()/440
+            default:
+                return alert("Opção inválida")
+        }
+    }
     getTamanho() {
         switch(this.opcao){
             case 1:

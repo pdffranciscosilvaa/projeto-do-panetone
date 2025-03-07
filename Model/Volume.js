@@ -19,6 +19,7 @@ export default class Volume{
     }
     //O códgio irá pegar o valor do raio e da altura e calcular o volume do panetone
     //Se o tamanho for personalizado, ele irá calcular o volume do panetone personalizado a partir de outra classe definida como DefTamanho
-    //Se o tamanho não for personalizado, ele irá calcular o volume do panetone a partir do tamanho padrão encontrado também no DefTamanho
+    //Se o tamanho não for personalizado, ele irá calcular o volume do panetone a partir do tamanho padrão encontrado também no
     //O cálculo do volume é feito a partir da fórmula do volume de um cilindro
+    //O volume é retornado, onde deve ser mostrado no index.html a partir da função calcularVolume()
 }    
