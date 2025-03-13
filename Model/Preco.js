@@ -1,4 +1,4 @@
-import Ings from './Ings.js'
+import Ings from './DefIngredientes.js'
 export default class Preco{
     preco = {
         "Farinha de trigo integral": 1.08,
