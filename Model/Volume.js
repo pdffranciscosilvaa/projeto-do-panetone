@@ -5,10 +5,10 @@ export default class Volume{
         this.altura = altura
     }
     calcularVolume(){
-        if(Tamanho.getTamanho() == "personalizado"){
-            return Tamanho.calcTamanhoPers()
+        if(Tamanho.getOpcao() == 4){
+            return Tamanho.calcularVolumePersonalizado()
         }else{
-            return Tamanho.getTamanho() / 0,785
+            return Tamanho.getTamanho() / 0.785
         }
     }
     getRaio(){
