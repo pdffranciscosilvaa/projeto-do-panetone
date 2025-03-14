@@ -7,6 +7,7 @@
     "start": "node index.js",
     "test": "jest"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pdffranciscosilvaa/projeto-do-panetone.git"

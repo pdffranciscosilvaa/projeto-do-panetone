@@ -1,4 +1,4 @@
-import Tamanho from "./DefTamanho"
+import Tamanho from "./DefTamanho.js"
 export default class Volume{
     constructor(raio, altura){
         this.raio = raio
