@@ -5,10 +5,10 @@ export default class Volume{
         this.altura = altura
     }
     calcularVolume(){
-        if(Tamanho.getTamanho() == "personalizado"){
-            return Tamanho.calcTamanhoPers()
+        if(Tamanho.getOpcao() == 4){
+            return Tamanho.calcularVolumePersonalizado()
         }else{
-            return Tamanho.getTamanho() / 0,785
+            return Tamanho.getTamanho() / 0.785
         }
     }
     getRaio(){
@@ -17,9 +17,4 @@ export default class Volume{
     getAltura(){
         return this.altura
     }
-    //O códgio irá pegar o valor do raio e da altura e calcular o volume do panetone
-    //Se o tamanho for personalizado, ele irá calcular o volume do panetone personalizado a partir de outra classe definida como DefTamanho
-    //Se o tamanho não for personalizado, ele irá calcular o volume do panetone a partir do tamanho padrão encontrado também no
-    //O cálculo do volume é feito a partir da fórmula do volume de um cilindro
-    //O volume é retornado, onde deve ser mostrado no index.html a partir da função calcularVolume()
 }    

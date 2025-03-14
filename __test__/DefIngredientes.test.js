@@ -1,15 +1,17 @@
-import Ings from "../Model/DefIngredientes"
-describe("Testando integração de código universal", ()=>{
-    test("Testando função calcularIngs", ()=>{
-        const farinha_trigo = 150
-        const acucar = 100
-        const manteiga = 40
-        const ovos = 2
-        const leite = 60
-        const fermento = 5
-        const sal = 2
-        let ings = [{farinha_trigo}, {acucar}, {manteiga}, {ovos}, {leite}, {fermento}, {sal}]
-        const proporc = 440
-        
-    })
-})
+import Ingredientes from "../Model/DefIngredientes.js";
+import Tamanho from "../Model/DefTamanho.js";
+
+describe("Classe Ingredientes", () => {
+  test("Quantidades proporcionais ao tamanho médio", () => {
+    const quantidades = Ingredientes.calcularQuantidades(2);
+    const qtdEsperadaFarinhaIntegral = 150;
+    expect(quantidades["Farinha de trigo integral"]).toBe(qtdEsperadaFarinhaIntegral);
+  });
+
+  test("Proporção para tamanho personalizado", () => {
+    const volumeMedio = Tamanho.tamanhosPadrao[2];
+    const quantidades = Ingredientes.calcularQuantidades(4, 5, 10);
+    const proporcaoEsperada = (Math.PI * 25 * 10) / volumeMedio;
+    expect(quantidades["Ovos"]).toBeCloseTo(2 * proporcaoEsperada, 2);
+  });
+});
