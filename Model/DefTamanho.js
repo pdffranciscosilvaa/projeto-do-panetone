@@ -3,6 +3,11 @@ export default class Tamanho{
     constructor(opcao){
         this.opcao = opcao
     }
+    calcTamanhoPers(){
+        raio = Volume.getRaio()
+        altura = Volume.getAltura()
+        return Math.PI * Math.pow(raio, 2) * altura
+    }
     tamanho = {
         "pequeno": 180,
         "medio": 440,
@@ -49,11 +54,6 @@ export default class Tamanho{
             default:
                 return alert("Opção inválida")
         }
-    }
-    calcTamanhoPers(){
-        raio = Volume.getRaio()
-        altura = Volume.getAltura()
-        return Math.PI * Math.pow(raio, 2) * altura
     }
     getOpcao(){
         return this.opcao
