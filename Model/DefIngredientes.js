@@ -1,4 +1,4 @@
-import Tamanho from "./DefTamanho"
+import Tamanho from "./DefTamanho.js"
 export default class Ings {
     calcularIngs(){
         let ings = [{farinha_trigo}, {acucar}, {manteiga}, {ovos}, {leite}, {fermento}, {sal}]

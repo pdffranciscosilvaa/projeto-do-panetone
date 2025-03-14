@@ -1,5 +1,8 @@
-import Ings from './Ings.js'
+import Ings from './DefIngredientes.js'
 export default class Preco{
+    constructor(qt){
+        this.qt = qt
+    }
     preco = {
         "Farinha de trigo integral": 1.08,
         "Farinha de trigo branca": 0.62,
@@ -19,6 +22,7 @@ export default class Preco{
         for (let i = 0; i < ings.length; i++){
            valorTotal += ings[i] * this.preco[i]
         }
+        valorTotal * qt
         return valorTotal
     }
     getPreco(){
